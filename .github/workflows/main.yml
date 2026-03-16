@@ -1,0 +1,11 @@
+name: GItHub example concurrency
+on: 
+ push:
+  branches: [main]
+jobs:
+ demo:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout repository
+      run: echo "test.java"
+    
